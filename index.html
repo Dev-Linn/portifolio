@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincoln Costa - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LNGDMKHBN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8LNGDMKHBN');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Lincoln Costa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Card Esquerdo -->
+        <div class="card profile-card">
+            <img src="images/sua-foto.jpeg" alt="Lincoln Costa" class="profile-img">
+            <h1>Linn Dev</h1>
+            <p class="subtitle">Desenvolvedor Backend</p>
+            <div class="divider"></div>
+            <p class="location">📍 Ituiutaba-MG</p>
+            <br>
+            <p class="bio">Estudante de Sistemas de informação UEMG</p>
+        </div>
+
+        <!-- Cards do Meio -->
+        <div class="mid-column">
+            <div class="card experience-card">
+                <h2>Experiência Profissional</h2>
+                <ul>
+                    <li>💻 Colégio Gabarito - Funcionário de TI</li>
+                </ul>
+            </div>
+            
+            <div class="card skills-card">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill">Java</span>
+                    <span class="skill">Spring Boot</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">Axios</span>
+                </div>
+            </div>
+
+            <!-- Novo Card de Certificados -->
+            <div class="card certifications-card">
+                <h2>Certificados</h2>
+                <ul class="certifications-list">
+                    <li>🎓 Java COMPLETO Programação Orientada a Objetos + Projetos</li>
+                    <li>🎓 Programa Talentos de Futuro - turma de TI</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Card de Projetos -->
+        <div class="card projects-card">
+            <div class="projects-header">
+                <div>
+                    <h2>Repositórios Recentes</h2>
+                    <p class="api-info">Explore e interaja com minhas APIs!</p>
+                </div>
+                <button class="toggle-projects" onclick="toggleProjects()">Ver todos</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>API library </h3>
+                    <p>API para gerenciamento de autores e livros com arquitetura de microserviços. 
+                        <br> <br>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" style="width: 20px; height: 20px;"> 
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" style="width: 20px; height: 20px;">  
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" style="width: 20px; height: 20px;">
+                    </p>
+                </div>
+                
+                <div class="project">
+                    <h3>Xadrez em Java </h3>
+                    <p>Jogo de xadrez completo em Java.
+                        <br> <br>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" style="width: 20px; height: 20px;">
+                    </p>
+                </div>
+                
+                <div class="project hidden">
+                    <h3>UberChallenge </h3>
+                    <p>UberChallenge EmailSender - JAVA SPRING. 
+                        <br> <br>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" style="width: 20px; height: 20px;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" style="width: 20px; height: 20px;">  
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" style="width: 20px; height: 20px;">
+                    </p>
+                </div>
+                
+                <div class="project hidden">
+                    <h3>PokeApi </h3>
+                    <p>API CRUD para listar pokemons. Tecnologias: <br> <br>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" style="width: 20px; height: 20px;"> 
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" style="width: 20px; height: 20px;"> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2023 Lincoln Costa. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ por Linn Dev</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

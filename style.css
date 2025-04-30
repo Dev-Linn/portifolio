@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background: #111;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #333;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header nav ul li a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.card {
+    background: #111;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Card Esquerdo */
+.profile-card {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 3px solid #333;
+}
+
+.subtitle {
+    color: #888;
+    margin: 0.5rem 0;
+}
+
+.divider {
+    height: 2px;
+    background: #222;
+    margin: 1rem 0;
+}
+
+/* Cards do Meio */
+.mid-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-card li {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.skill {
+    background: #222;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.certifications-list li {
+    margin: 1rem 0;
+    list-style: none;
+    color: #4CAF50;
+    padding: 0.8rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+/* Card de Projetos */
+.projects-card {
+    transition: all 0.3s ease;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.api-info {
+    color: #4CAF50;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.toggle-projects {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.toggle-projects:hover {
+    background: #45a049;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.project {
+    background: #1a1a1a;
+    padding: 4rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+/* Estado Expandido */
+.projects-card.expanded {
+    grid-column: 2 / 4;
+    position: relative;
+    z-index: 2;
+}
+
+.projects-card.expanded .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
